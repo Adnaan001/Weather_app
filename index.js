@@ -1,6 +1,4 @@
 
-const APIKEY='efa6f9078f6f2c8f00815e89dfaaa21a';
-
 // for current loc data api link is 
 // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={APIKEY}
 
