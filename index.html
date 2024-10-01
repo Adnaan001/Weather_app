@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="head">
+                <p id="head_p1">
+                    Your Weather
+                </p>
+                <p id="head_p2">
+                    Search Weather
+                </p>
+            </div>
+            <!-- ============================================== -->
+            <div class="content">
+                <div id="grant_location" class="inactive">
+                    <img src="assets/location.png" alt="" width="150px" height="150px">
+                    <p style="font-size: 3rem; color: black;" id="ur_weather">Grant Location Access</p>
+                    <p id="search_weather">Allow Access to get Weather Information</p>
+                    <button id="permission_button">
+                        Grant Access
+                    </button>
+                </div>
+                <!-- ------------------------------------------------- -->
+                 <div id="loader" class="inactive">
+                    <span class="loader"></span>
+                    <p>loading</p>
+                 </div>
+                <!-- ------------------------------------------------- -->
+                <!-- ------------------------------------------ -->
+                 
+                <!-- ------------------------------------------- -->
+                <div id="city_page">
+                        <form id="search_bar" class="inactive">
+                            <input type="text" placeholder="Search" id="search_data">
+                            <button type="submit" style="background-color: transparent; border:none;">
+                                <i class="fa-solid fa-magnifying-glass-location fa-2xl search_icon" style="color: #ffffff;"></i>
+                            </button>
+                        </form>
+                        <div id="your_data" class="data inactive">
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 2rem;">
+                                <h2 class="name">Hyderabad</h2>
+                                <img class="city_img" width="20px" height="20px">
+                            </div>
+                            <p class="climate">
+                                Haze
+                            </p>
+                            <div>
+                                <img  alt="" width="80px" height="80px" class="icon">
+                            </div>
+                            <div class="reading">
+                                25.08c
+                            </div>
+                            <div style="display: flex;justify-content: center; gap: 1rem; width:100%;">
+                                <div class="other">
+                                    <img src="assets/windspeed.png" alt=""  width="80px" height="80px">
+                                    <p  style="font-size: 1.5rem;">WINDSPEED</p>
+                                    <p class="w_speed" style="font-size: 1.5rem;">1.54m/s</p>
+                                </div>
+                                <div class="other">
+                                    <img src="assets/humidity.png" alt=""  width="80px" height="80px">
+                                    <p style="font-size: 1.5rem;">HUMIDITY</p>
+                                    <p class="humidity" style="font-size: 1.5rem;">53%</p>
+                                </div>
+                                <div class="other">
+                                    <img src="assets/clouds.png" alt="" width="80px" height="80px">
+                                    <p style="font-size: 1.5rem;">CLOUDS</p>
+                                    <p id="clouds" style="font-size: 1.5rem;">0%</p>
+                                </div>
+                            </div>
+                        </div>
+ 
+                </div>
+                <!-- -------------------------------------------------------- -->
+                <div class="e404 inactive">
+                    <img src="assets/404.jpg" alt="errorrr 404" width="300px" height="300px">
+                    <p>CITY NOT FOUND</p>
+                </div>
+            </div>
+            <!-- ====================================================== -->
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/36d9806cfc.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
